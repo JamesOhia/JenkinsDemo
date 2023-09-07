@@ -45,8 +45,7 @@ jobs:
       # Run Collection
       - name: Run Collection
         run: |
-          newman run BAAS_Account_Enquiry.postman_collection.json -e BAAS_Environment.postman_environment.json
-          -r htmlextra --reporter-htmlextra-export ReportArtifact/report.html
+          newman run BAAS_Account_Enquiry.postman_collection.json -e BAAS_Environment.postman_environment.json -r htmlextra --reporter-htmlextra-export ReportArtifact/report.html
 
       #Publish Report
       - name: Publish Report
